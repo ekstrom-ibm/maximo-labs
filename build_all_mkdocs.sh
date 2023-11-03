@@ -7,9 +7,9 @@
 root_dir=`pwd`
 
 # Clear the existing /site content:
-#rm -r site
-#echo "BUILD_INFO - The existing /site has been removed to avoid any leftovers."
-#sleep 1
+rm -r site
+echo "BUILD_INFO - The existing /site has been removed to avoid any leftovers."
+sleep 1
 
 # Build the top level:
 cd $root_dir/MkDocs/toplevel
