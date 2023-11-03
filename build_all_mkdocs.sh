@@ -7,9 +7,9 @@
 root_dir=`pwd`
 
 # Clear the existing /site content:
-rm -r site
-echo "BUILD_INFO - The existing /site has been removed to avoid any leftovers."
-sleep 1
+#rm -r site
+#echo "BUILD_INFO - The existing /site has been removed to avoid any leftovers."
+#sleep 1
 
 # Build the top level:
 cd $root_dir/MkDocs/toplevel
@@ -27,16 +27,16 @@ lab=monitor_nodered_csv_importer_2.0
 cd $root_dir/MkDocs/$lab
 mkdocs build
 echo "BUILD_INFO - The $lab labs are build and added under the top level of IBM Maximo Labs."
-mv $root_dir/site/$lab/img/$lab $root_dir/site/img/
-echo "BUILD_INFO - The $lab lab images has been moved under /site/img/$lab."
+mv $root_dir/docs/$lab/img/$lab $root_dir/docs/img/
+echo "BUILD_INFO - The $lab lab images has been moved under /docs/img/$lab."
 
 # Build the Monitor Edge Data Collector level:
 lab=edc_8.11
 cd $root_dir/MkDocs/$lab
 mkdocs build
 echo "BUILD_INFO - The $lab labs are build and added under the top level of IBM Maximo Labs."
-mv $root_dir/site/$lab/img/$lab $root_dir/site/img/
-echo "BUILD_INFO - The $lab lab images has been moved under /site/img/$lab."
+mv $root_dir/docs/$lab/img/$lab $root_dir/docs/img/
+echo "BUILD_INFO - The $lab lab images has been moved under /docs/img/$lab."
 
 
 
@@ -49,19 +49,19 @@ lab=template_1.0
 cd $root_dir/MkDocs/$lab
 mkdocs build
 echo "BUILD_INFO - The $lab labs are build and added under the top level of IBM Maximo Labs."
-mv $root_dir/site/$lab/img/$lab $root_dir/site/img/
-echo "BUILD_INFO - The $lab lab images has been moved under /site/img/$lab."
+mv $root_dir/docs/$lab/img/$lab $root_dir/docs/img/
+echo "BUILD_INFO - The $lab lab images has been moved under /docs/img/$lab."
 
 # Build the contribution level:
 lab=contribute
 cd $root_dir/MkDocs/$lab
 mkdocs build
 echo "BUILD_INFO - The $lab labs are build and added under the top level of IBM Maximo Labs."
-mv $root_dir/site/$lab/img/$lab $root_dir/site/img/
-echo "BUILD_INFO - The $lab lab images has been moved under /site/img/$lab."
+mv $root_dir/docs/$lab/img/$lab $root_dir/docs/img/
+echo "BUILD_INFO - The $lab lab images has been moved under /docs/img/$lab."
 
 
 # Start the web server hosting the complete site - then open the following URL in a browser: http://127.0.0.1:8080
-cd $root_dir/site
+cd $root_dir/docs
 echo "BUILD_INFO - Starting the web server on http://127.0.0.1:8080."
 python -m http.server --cgi 8080
