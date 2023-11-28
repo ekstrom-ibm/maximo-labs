@@ -1,4 +1,4 @@
-
+<!--About, EDC, Monitor-->
 # Contributors to the</br>Maximo Monitor Edge Data Collector Lab
 
 - Jan Ekstrøm - <jan.ekstrom@dk.ibm.com>
