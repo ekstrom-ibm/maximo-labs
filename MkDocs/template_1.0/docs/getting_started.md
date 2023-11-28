@@ -33,7 +33,7 @@ Ask your facilitator for a demonstration of Maxiom Template or watch this short 
 
 Here is a high level functional architecture of Maximo Template:
 
-![Template Architecture](/img/template_1.0/architecture.png)
+![Template Architecture](img/architecture.png)
 
 # Included Services
 IBM Maximo Template includes the following IBM Cloud services that help you achieve the above business benefits:
